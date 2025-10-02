@@ -1,5 +1,4 @@
-<img src="./assets/images/BannerImage-BocchiTheRock.png" width="100%">
-<br>
+<img src="./assets/images/BannerImage-BocchiTheRock.png" width="100%"> 
 
 # CMGT FED – Final Assignment
 
