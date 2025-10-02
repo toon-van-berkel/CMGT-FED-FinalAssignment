@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Toon van Berkel">
+    <meta name="description" content="Bocchi merch webshop made by Toon van Berkel">
+    <title>Bocchi The Rock! - Contact</title>
+    <link rel="icon" href="./assets/images/BocchiTheRock-LogoWhite.png">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/images/BocchiTheRock-LogoBlack.png" alt="Bocchi The Rock! Logo Black">
+            <span>Bocchi The Rock!</span>
+        </a>
+        <ul>
+            <li><a href="#">New merch</a></li>
+            <li><a href="#">Qoute</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Let’s Rock — Get in Touch!</h1>
+            <p>Do you want to know more about our latest Bocchi the Rock! merch, need help with an order, or just want to share your thoughts? Fill in the form below and we’ll get back to you as soon as possible.</p>
+        </header>
+        <section>
+            <form action="#" method="post">
+                <h2>Form</h2>
+                <div class="field-container">
+                    <div class="field">
+                        <label for="firstname">First name:</label>
+                        <input id="firstname" name="firstname" type="text" placeholder="First name" required autocomplete="given-name" />
+                    </div>
+                    <div class="field">
+                        <label for="lastname">Last name:</label>
+                        <input id="lastname" name="lastname" type="text" placeholder="Last name" required autocomplete="family-name" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required autocomplete="email" />
+                </div>
+
+                <div class="field-container">
+                    <div class="field">
+                        <label for="residence">Place of residence:</label>
+                        <input id="residence" name="residence" type="text" placeholder="Place of residence" required autocomplete="address-level2" />
+                    </div>
+                    <div class="field">
+                        <label for="Birthdate">Birthdate:</label>
+                        <input id="Birthdate" name="Birthdate" type="date" placeholder="dd-mm-jjjj" required />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="Subject">Subject</label>
+                    <div>
+                        <select id="Subject" name="Subject" required>
+                            <option value="" selected disabled>Choose the subject of the message…</option>
+                            <option value="order">Order</option>
+                            <option value="product">Product question</option>
+                            <option value="retour">Retour/warranty</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
+                </div>
+
+                <div>
+                    <span style="font-weight:600; font-size:14px;">Sign up for the newsletter?</span>
+                    <div role="radiogroup" aria-label="sign up for the newsletter">
+                        <label>
+                            <input type="radio" name="newsletter" value="ja" /> Ja
+                        </label>
+                        <label>
+                            <input type="radio" name="newsletter" value="nee" /> Nee
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="termsconditions" required />
+                        <span>I agree to the general terms and conditions</span>
+                    </label>
+                </div>
+
+                <button type="submit">Send</button>
+
+                <span>Fields with * are required.</span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <figure>
+                    <img src="./assets/images/BocchiTheRock-LogoWhite.png" alt="Bocchi The Rock! Logo White">
+                    <span>Bocchi The Rock!</span>
+                </figure>
+                <span>&copy; Copyright 2025 - 2026</span>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/toon-van-berkel-a9112628b/" target="_blank"><img src="./assets/images/LinkedInIcon.png" alt="Linkedin link"></a></li>
+                    <li><a href="https://github.com/toon-van-berkel" target="_blank"><img src="./assets/images/GithubIcon.png" alt="Github link"></a></li>
+                    <li><a href="https://toon-van-berkel.github.io/PP-SocialLinks/" target="_blank"><img src="./assets/images/WebIcon.png" alt="Web link"></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">Privacyverklaring</a></li>
+                <li><a href="#">Algemene voorwaarden</a></li>
+                <li><a href="#">Cookiebeleid</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
