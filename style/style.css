@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Akshar:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body, main {
+    min-width: 100%;
+    min-height: 100svh;
+
+    background-color: #D9A9AE;
+}
+h1, h2, h3 {
+    font-family: "Akshar", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Navbar styling */
+nav {
+    width: 60%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+nav a img {
+    height: 100px;
+    width: 100px;
+}
+nav a span {
+    font-family: "Akshar", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+nav ul {
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+}
+nav ul li a {
+    padding: 10px 10px;
+
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #000000;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #A4515A;
+    color: #ffffff;
+}
+
+/* Header styling */
+header {
+    min-height: 30svh;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    background-color: #A4515A;
+}
+.background-image {
+    background-image: url("../assets/images/BannerImage-BocchiTheRock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header div h1 {
+    font-size: 2.2em;
+}
+header div p {
+    max-width: 50%;
+
+    font-size: 1.2em;
+}
+header div > div {
+    margin-top: 20px;
+    gap: 20px;
+
+    display: flex;
+}
+
+/* Section styling */
+section {
+    max-width: 1800px;
+    width: 60%;
+    padding: 20px;
+    
+    margin: 0 auto;
+}
+
+/* Cards styling */
+section > .cards {
+    gap: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+section > .cards article {
+    min-width: 380px;
+    max-width: 450px;
+    padding: 20px;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: #A4515A;
+    color: #ffffff;
+}
+section > .cards article img {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    background-color: #D9A9AE;
+    border-radius: 5px;
+}
+section > .cards article > div {
+    width: 70%;
+    height: 100%;
+}
+section > .cards article > div span {
+    font-size: 1.4em;
+}
+section > .cards article > div p {
+    margin-bottom: 12px;
+}
+
+/* Qoute section */
+.qoute {
+    max-width: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    background-color: #A4515A;
+}
+.qoute p {
+    width: 40%;
+    padding: 40px 0;
+
+    text-align: center;
+    font-family: "Akshar", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+/* Announcement section */
+.announcement {
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.announcement article {
+    width: 30%;
+}
+.announcement figure {
+    width: 30%;
+}
+.announcement figure img {
+    width: 100%;   
+}
+.announcement figure img, 
+.announcement figure figcaption {
+    padding: 5px;
+
+    border: 1px solid #A4515A;
+    background-color: #A4515A;
+    color: #ffffff;
+}
+
+/* Form */
+form {
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+form > .field-container {
+    gap: 20px;
+
+    display: flex;
+}
+form > .field {
+    display: flex;
+    flex-direction: column;
+}
+form > div > .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+form div div[role=radiogroup] label {
+    margin-right: 20px;
+}
+form select {
+    width: 100%;
+}
+form input,
+form textarea,
+form select {
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form input[type=checkbox]:hover,
+form input[type=radio]:hover {
+    cursor: pointer;
+}
+form input:invalid,
+form select:invalid,
+form textarea:invalid {
+    border: 2px solid red;
+}
+form input:valid,
+form select:valid,
+form textarea:valid {
+    border: 2px solid green;
+}
+.field:has(input[required]) > label::after,
+.field:has(select[required]) > label::after,
+.field:has(textarea[required]) > label::after {
+    content: '*';
+}
+form button {
+    padding: 10px 0;
+    background-color: #A4515A;
+    border-radius: 5px;
+    border: 1px solid #A4515A;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+form button:hover {
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+
+    background-color: #A4515A;
+    color: #ffffff;
+}
+footer > div {
+    width: 80%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+
+    display: flex;
+    align-items: flex-end;
+}
+footer div div {
+    width: 40%;
+}
+footer div div figure {
+    gap: 20px;
+
+    display: flex;
+    align-items: center;
+    
+    font-weight: bold;
+    font-size: 1.3em;
+}
+footer div div figure img {
+    height: 50px;
+    width: 50px;
+}
+footer div ul li a img {
+    height: 50px;
+    margin-top: 20px;
+} 
+footer ul {
+    width: 60%;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    list-style: none;
+}
+footer ul li a {
+    color: #ffffff;
+}
+
+/* Button styling */
+.button {
+    padding: 20px 30px;
+
+    display: block;
+
+    background-color: #D9A9AE;
+    border-radius: 5px;
+    border: 1px solid #D9A9AE;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+.button:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media (width <= 2100px) {
+    section,
+    nav {
+        width: 80%;
+    }
+}
+@media (width <= 2000px) {   
+    .announcement article {
+        width: 40%;
+    }
+    .announcement figure {
+        width: 40%;
+    }
+}
+@media (width <= 1500px) {
+    .announcement article {
+        width: 50%;
+    }
+    .announcement figure {
+        width: 50%;
+    }
+}
+@media (width <= 1100px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .background-image {
+        background-size: cover;
+        background-position: right;
+    }
+
+    /* Qoute styling */
+    .qoute p {
+        width: 60%;
+    }
+
+    /* Announcement styling */
+    .announcement {
+        flex-direction: column;
+    }
+    .announcement article,
+    .announcement figure {
+        width: 100%;
+    }
+
+    /* Footer styling */
+    footer > div {
+        flex-direction: column;
+    }
+    footer div div {
+        width: 100%;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #ffffff;
+    }
+    footer div ul {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+@media (width <= 1024px) {
+    section {
+        width: 90%;
+    }
+    .cards {
+        justify-content: center;
+    }
+}
+@media (width <= 700px) {
+    footer > div > ul {
+        flex-direction: column;
+    }
+    .field-container {
+        flex-direction: column;
+    }
+}
+@media (width <= 500px) {
+    nav ul {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 20px;
+
+        flex-direction: column;
+        border-top: 1px solid white;
+    }
+}
