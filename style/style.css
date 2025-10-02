@@ -293,6 +293,14 @@ footer > div {
 footer div div {
     width: 40%;
 }
+footer div div ul {
+    gap: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    list-style: none;
+}
 footer div div figure {
     gap: 20px;
 
@@ -310,7 +318,7 @@ footer div ul li a img {
     height: 50px;
     margin-top: 20px;
 } 
-footer ul {
+footer div > ul {
     width: 60%;
     gap: 20px;
     display: flex;
