@@ -162,6 +162,7 @@ section > .cards article {
 }
 section > .cards article:hover img {
     transform: scale(1.04);
+    cursor: pointer;
 }
 section > .cards article img {
     width: 100%;
