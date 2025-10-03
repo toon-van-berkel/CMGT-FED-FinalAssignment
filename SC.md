@@ -24,3 +24,25 @@ Ik heb transitions en hover-effecten toegevoegd. Als ik met de muis over een kno
 
 ### 8. AI-verantwoording
 Voor deze opdracht heb ik geen AI gebruikt om code te genereren. Ik heb alle HTML en CSS zelf geschreven. Ik heb wel gebruikgemaakt van online bronnen zoals Reddit en Stack Overflow om oplossingen te vinden en ideeën te krijgen. Als ik AI zou gebruiken, zou dat alleen zijn om teksten te verbeteren of om vragen te stellen, nooit om code te genereren.
+
+## Extra
+### ✅ 1. W3C-validator
+Ik heb mijn website gevalideerd met de W3C Validator
+. Daarbij komen geen errors of warnings naar voren. Dat betekent dat mijn HTML en CSS voldoen aan de officiële webstandaarden en dat de code technisch correct en toekomstbestendig is.
+
+### ✅ 2. Animations
+Ik heb een animatie toegepast op de productkaarten. Wanneer je over een kaart heen hovert, zoomt de productafbeelding subtiel in. Dit maakt de interactie betekenisvoller, omdat het direct visuele feedback geeft dat de kaart klikbaar is. Daarnaast heb ik rekening gehouden met gebruikers die ‘reduced motion’ in hun systeeminstellingen gebruiken — voor hen wordt de animatie automatisch uitgeschakeld.
+
+### ✅ 3. CSS-variabelen
+Ik gebruik CSS-variabelen om mijn kleuren consistent te beheren. In :root heb ik variabelen gedefinieerd zoals --primary-color en --secondary-color. Deze gebruik ik vervolgens in mijn stylesheet. Dit maakt mijn code overzichtelijker, makkelijker te onderhouden, en zorgt ervoor dat ik snel een kleurschema kan aanpassen zonder op tientallen plekken in de code te zoeken.
+
+### ❌ 4. CSS Grid
+CSS Grid heb ik niet toegepast in dit project. Mijn layout is volledig opgebouwd met Flexbox. Hoewel Grid handig is voor meer complexe lay-outs, heb ik hier bewust voor Flexbox gekozen omdat dit beter aansluit bij de structuur van mijn ontwerp.
+
+(In je video kun je dit ook kort noemen: dat je Grid begrijpt, maar niet nodig vond voor dit ontwerp.)
+
+### ✅ 5. Gebruikersvoorkeuren
+Ik heb in mijn CSS rekening gehouden met gebruikersvoorkeuren door @media (prefers-reduced-motion: reduce) toe te passen. Wanneer een gebruiker in zijn systeem heeft aangegeven dat hij minder animaties wil zien, schakelt mijn website automatisch alle transitions en animaties uit. Dit zorgt voor een inclusieve ervaring die beter aansluit bij de behoefte van de gebruiker.
+
+### ✅ 6. WCAG-onderdelen
+Ik heb extra aandacht besteed aan WCAG-richtlijnen die niet standaard in de lessen zaten. Zo heb ik een ‘Skip to content’-link toegevoegd, waarmee toetsenbordgebruikers direct de navigatie kunnen overslaan en naar de hoofdinhoud springen. Daarnaast heb ik duidelijke focus-indicatoren toegevoegd via :focus-visible, zodat gebruikers die navigeren met een toetsenbord altijd goed kunnen zien welk element actief is. Dit verbetert zowel de toegankelijkheid als de gebruiksvriendelijkheid van mijn site.
