@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Akshar:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root {
+    --primary-color: #D9A9AE;
+    --secondary-color: #A4515A;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +21,7 @@ body, main {
     min-width: 100%;
     min-height: 100svh;
 
-    background-color: #D9A9AE;
+    background-color: var(--primary-color);
 }
 h1, h2, h3 {
     font-family: "Akshar", sans-serif;
@@ -48,7 +55,7 @@ nav a span {
     font-optical-sizing: auto;
     font-size: 2em;
     font-weight: bold;
-    color: #000000;
+    color: var(--text-dark);
 }
 nav ul {
     gap: 20px;
@@ -64,12 +71,12 @@ nav ul li a {
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.3em;
-    color: #000000;
+    color: var(--text-dark);
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: #A4515A;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
 }
 
 /* Header styling */
@@ -82,8 +89,8 @@ header {
     justify-content: center;
     align-items: center;
 
-    color: #ffffff;
-    background-color: #A4515A;
+    color: var(--text-light);
+    background-color: var(--secondary-color);
 }
 .background-image {
     background-image: url("../assets/images/BannerImage-BocchiTheRock.png");
@@ -133,15 +140,15 @@ section > .cards article {
     align-items: center;
 
     border-radius: 5px;
-    background-color: #A4515A;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
 }
 section > .cards article img {
     width: 100%;
     margin-bottom: 15px;
     padding: 20px;
 
-    background-color: #D9A9AE;
+    background-color: var(--primary-color);
     border-radius: 5px;
 }
 section > .cards article > div {
@@ -163,7 +170,10 @@ section > .cards article > div p {
     display: flex;
     justify-content: center;
 
-    background-color: #A4515A;
+    background-color: var(--secondary-color);
+}
+.qoute > h2 {
+    display: none;
 }
 .qoute p {
     width: 40%;
@@ -174,7 +184,7 @@ section > .cards article > div p {
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 1.8em;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 /* Announcement section */
@@ -183,6 +193,9 @@ section > .cards article > div p {
 
     display: flex;
     justify-content: center;
+}
+.announcement > h2 {
+    display: none;
 }
 .announcement article {
     width: 30%;
@@ -197,9 +210,9 @@ section > .cards article > div p {
 .announcement figure figcaption {
     padding: 5px;
 
-    border: 1px solid #A4515A;
-    background-color: #A4515A;
-    color: #ffffff;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--text-light);
 }
 
 /* Form */
@@ -259,17 +272,17 @@ form textarea:valid {
 }
 form button {
     padding: 10px 0;
-    background-color: #A4515A;
+    background-color: var(--secondary-color);
     border-radius: 5px;
-    border: 1px solid #A4515A;
+    border: 1px solid var(--secondary-color);
 
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--text-light);
 }
 form button:hover {
     background-color: transparent;
-    color: #000000;
+    color: var(--text-dark);
     cursor: pointer;
 }
 
@@ -277,8 +290,8 @@ form button:hover {
 footer {
     width: 100%;
 
-    background-color: #A4515A;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
 }
 footer > div {
     width: 80%;
@@ -327,7 +340,7 @@ footer div > ul {
     list-style: none;
 }
 footer ul li a {
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 /* Button styling */
@@ -336,18 +349,18 @@ footer ul li a {
 
     display: block;
 
-    background-color: #D9A9AE;
+    background-color: var(--primary-color);
     border-radius: 5px;
-    border: 1px solid #D9A9AE;
+    border: 1px solid var(--primary-color);
     font-weight: bold;
     font-size: 1.1em;
-    color: #000000;
+    color: var(--text-dark);
     text-decoration: none;
     text-align: center;
 }
 .button:hover {
     background-color: transparent;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 @media (width <= 2100px) {
@@ -404,7 +417,7 @@ footer ul li a {
         width: 100%;
         padding-bottom: 20px;
 
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid var(--text-light);
     }
     footer div ul {
         width: 100%;
