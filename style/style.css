@@ -27,6 +27,23 @@ h1, h2, h3 {
     font-family: "Akshar", sans-serif;
     font-optical-sizing: auto;
 }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid #ffbf00;
+    outline-offset: 3px;
+}
+.skip-link {
+    padding: .5rem .75rem; border-radius: 4px;
+
+    position: absolute; left: -9999px; 
+    top: .5rem;
+
+    background: var(--secondary-color); 
+    color: var(--text-light);
+}
+.skip-link:focus {  
+    z-index: 1000; 
+    left: .5rem; 
+}
 
 /* Navbar styling */
 nav {
@@ -143,6 +160,9 @@ section > .cards article {
     background-color: var(--secondary-color);
     color: var(--text-light);
 }
+section > .cards article:hover img {
+    transform: scale(1.04);
+}
 section > .cards article img {
     width: 100%;
     margin-bottom: 15px;
@@ -150,6 +170,9 @@ section > .cards article img {
 
     background-color: var(--primary-color);
     border-radius: 5px;
+
+    transition: transform .25s ease;
+    will-change: transform;
 }
 section > .cards article > div {
     width: 70%;
@@ -162,8 +185,8 @@ section > .cards article > div p {
     margin-bottom: 12px;
 }
 
-/* Qoute section */
-.qoute {
+/* Quote section */
+.Quote {
     max-width: 100%;
     width: 100%;
     
@@ -172,10 +195,10 @@ section > .cards article > div p {
 
     background-color: var(--secondary-color);
 }
-.qoute > h2 {
+.Quote > h2 {
     display: none;
 }
-.qoute p {
+.Quote p {
     width: 40%;
     padding: 40px 0;
 
@@ -363,6 +386,10 @@ footer ul li a {
     color: var(--text-light);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
 @media (width <= 2100px) {
     section,
     nav {
@@ -395,8 +422,8 @@ footer ul li a {
         background-position: right;
     }
 
-    /* Qoute styling */
-    .qoute p {
+    /* Quote styling */
+    .Quote p {
         width: 60%;
     }
 
